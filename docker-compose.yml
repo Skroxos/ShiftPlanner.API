@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: tajneheslo
+      POSTGRES_DB: Shiftsdb
+    ports:
+      - "5432:5432"
+    restart: unless-stopped

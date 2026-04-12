@@ -1,0 +1,6 @@
+@ShiftsApi_HostAddress = http://localhost:5105
+
+GET {{ShiftsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
