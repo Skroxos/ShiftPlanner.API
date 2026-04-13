@@ -1,12 +1,9 @@
-﻿namespace ShiftsApi.Models;
+﻿namespace ShiftsApi.DTOs;
 
-public class Nurse
+public class CreateNurseDto
 {
-    public int Id { get; set; }
     public required string FirstName { get; set; }
     public required string LastName { get; set; }
     
     public double ContractHoursPerMonth { get; set; }
-
-    public List<Shift> Shifts { get; set; } = new();
 }
